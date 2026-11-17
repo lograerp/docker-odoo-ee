@@ -16,7 +16,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: ${ODOO_IMAGE:-odoo-ee}:${ODOO_VERSION:-19.0}
+    image: ${ODOO_IMAGE:-odoo-ee}:${ODOO_VERSION:-20.0}
     restart: unless-stopped
     depends_on:
       - postgres
